@@ -6,7 +6,9 @@ about our solar system's planets<br>
 
 **Installation/Usage**<br><br>
 Load the database from the utils folder-done with PHPmyAdmin or mysql <br>
- 
+
+Copy link from github and git clone the repository into your directory<br>
+
 Open up the project and type npm install into the console.<br>
  
 "npm start" in the console to start the site<br>

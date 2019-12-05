@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -48,7 +48,7 @@ section > div:not(.text-wrapper) {
 
 #line2
 {
-  height: 800px;
+  height: 150px;
   display: block;
   margin: 0 auto;
 }
@@ -65,17 +65,17 @@ section h3 {
   display: block;
   color: white;
   font-family: 'brewery', sans-serif;
-  font-size: 2rem;
+  font-size: 14px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
   
 }
-section p { color: white; width: 70%; font-size: 1.25rem; display: block; margin: 0 auto; }
+section p { color: white;  font-size: 10px; display: block; margin: 0 auto; }
 
 .hidden { display: none; }
 
-.svg-graphic { width: 280px;
+.svg-graphic { width: 80px;
  
 }
 
@@ -198,7 +198,7 @@ section p { color: white; width: 70%; font-size: 1.25rem; display: block; margin
 
 .main-header {
   margin: 20px 0 0 40px; 
-  font-size: 2rem;
+  font-size: 16px;
   font-family: "brewery", sans-serif;
 }
 
@@ -757,3 +757,70 @@ p > span { display: block; padding-bottom: 12px; }
     opacity: 1;
   }
 }
+
+
+
+@media screen and (min-width: 640px) {
+  .svg-graphic { width: 150px;
+ 
+  }
+
+  section h3 {
+    display: block;
+    color: white;
+    font-family: 'brewery', sans-serif;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+
+  section p { color: white; width: 70%; font-size: 18px; display: block; margin: 0 auto; }
+
+  #line2
+{
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin: 20px 0 0 40px; 
+  font-size: 22px;
+  font-family: "brewery", sans-serif;
+}
+}
+
+@media screen and (min-width: 900px) {
+  .svg-graphic { width: 280px;
+ 
+  }
+
+  section h3 {
+    display: block;
+    color: white;
+    font-family: 'brewery', sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+
+  section p { color: white; width: 70%; font-size: 1.25rem; display: block; margin: 0 auto; }
+
+  #line2
+{
+  height: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin: 20px 0 0 40px; 
+  font-size: 2rem;
+  font-family: "brewery", sans-serif;
+}
+}
+
