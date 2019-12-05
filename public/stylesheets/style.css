@@ -1,0 +1,759 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+* { box-sizing: border-box; }
+
+
+body { background-color: black; color: white; font-size: 14px; }
+
+.buffer { min-height: 100vh }
+
+main { padding: 40px; }
+
+section { margin-bottom: -20px; color: white; }
+
+section > div:not(.text-wrapper) {
+  width: 30%; display: block;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.main-header h1
+{
+  text-align: center;
+  font-family: Tahoma;
+}
+
+
+#sun
+{
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+#line
+{
+  display: block;
+  margin: 0 auto;
+}
+
+#line2
+{
+  height: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-wrapper {
+  display: block;
+  vertical-align: top;
+  margin: 0 auto;
+  width: 65%;
+ 
+}
+
+section h3 {
+  display: block;
+  color: white;
+  font-family: 'brewery', sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+section p { color: white; width: 70%; font-size: 1.25rem; display: block; margin: 0 auto; }
+
+.hidden { display: none; }
+
+.svg-graphic { width: 280px;
+ 
+}
+
+.see-more{
+  display: block;
+  margin: 0 auto;
+  margin-bottom:100px;
+}
+.see-more {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.svg-graphic {
+
+    -webkit-animation: rotate-center 4s ease-in-out infinite both;
+            animation: rotate-center 4s ease-in-out infinite both;
+}
+
+
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+.main-header {
+  margin: 20px 0 0 40px; 
+  font-size: 2rem;
+  font-family: "brewery", sans-serif;
+}
+
+.beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid black; }
+
+p > span { display: block; padding-bottom: 12px; }
+
+.popover { 
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  background-color: yellow;
+  width: 200px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  width: 80px;
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: black; 
+  background-color: yellow; 
+  margin-top: 40px
+}
+
+.see-more:hover{
+  transform: scale(1.5);
+}
+
+#line2 {
+	-webkit-animation: flicker-5 8s linear infinite both;
+	        animation: flicker-5 8s linear infinite both;
+}
+
+
+
+ @-webkit-keyframes flicker-5 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  -0.02% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  1.02% {
+    opacity: 1;
+  }
+  8.98% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 0;
+  }
+  9.8% {
+    opacity: 0;
+  }
+  9.82% {
+    opacity: 1;
+  }
+  9.48% {
+    opacity: 1;
+  }
+  9.5% {
+    opacity: 1;
+  }
+  9.6% {
+    opacity: 1;
+  }
+  9.62% {
+    opacity: 1;
+  }
+  14.98% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  15.8% {
+    opacity: 0.5;
+  }
+  15.82% {
+    opacity: 1;
+  }
+  15.18% {
+    opacity: 1;
+  }
+  15.2% {
+    opacity: 0.7;
+  }
+  16% {
+    opacity: 0.7;
+  }
+  16.02% {
+    opacity: 1;
+  }
+  15.48% {
+    opacity: 1;
+  }
+  15.5% {
+    opacity: 0.5;
+  }
+  16.2% {
+    opacity: 0.5;
+  }
+  16.22% {
+    opacity: 1;
+  }
+  16.98% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  17.8% {
+    opacity: 1;
+  }
+  17.82% {
+    opacity: 1;
+  }
+  20.48% {
+    opacity: 1;
+  }
+  20.5% {
+    opacity: 0.9;
+  }
+  21.3% {
+    opacity: 0.9;
+  }
+  21.32% {
+    opacity: 1;
+  }
+  20.98% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  22.02% {
+    opacity: 1;
+  }
+  39.98% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 1;
+  }
+  41.02% {
+    opacity: 1;
+  }
+  40.48% {
+    opacity: 1;
+  }
+  40.5% {
+    opacity: 0.6;
+  }
+  41.4% {
+    opacity: 0.6;
+  }
+  41.42% {
+    opacity: 1;
+  }
+  41.98% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 1;
+  }
+  42.8% {
+    opacity: 1;
+  }
+  42.82% {
+    opacity: 1;
+  }
+  59.98% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 1;
+  }
+  61.02% {
+    opacity: 1;
+  }
+  60.18% {
+    opacity: 1;
+  }
+  60.2% {
+    opacity: 0.2;
+  }
+  61% {
+    opacity: 0.2;
+  }
+  61.02% {
+    opacity: 1;
+  }
+  60.78% {
+    opacity: 1;
+  }
+  60.8% {
+    opacity: 0.4;
+  }
+  61.6% {
+    opacity: 0.4;
+  }
+  61.62% {
+    opacity: 1;
+  }
+  61.38% {
+    opacity: 1;
+  }
+  61.4% {
+    opacity: 0;
+  }
+  62.2% {
+    opacity: 0;
+  }
+  62.22% {
+    opacity: 1;
+  }
+  61.78% {
+    opacity: 1;
+  }
+  61.8% {
+    opacity: 1;
+  }
+  62.8% {
+    opacity: 1;
+  }
+  62.82% {
+    opacity: 1;
+  }
+  75.98% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 1;
+  }
+  77% {
+    opacity: 1;
+  }
+  77.02% {
+    opacity: 1;
+  }
+  77.98% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.7;
+  }
+  78.8% {
+    opacity: 0.7;
+  }
+  78.82% {
+    opacity: 1;
+  }
+  78.98% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  80.02% {
+    opacity: 1;
+  }
+  99.98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  101% {
+    opacity: 1;
+  }
+  101.02% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-5 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  -0.02% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  1.02% {
+    opacity: 1;
+  }
+  8.98% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 0;
+  }
+  9.8% {
+    opacity: 0;
+  }
+  9.82% {
+    opacity: 1;
+  }
+  9.48% {
+    opacity: 1;
+  }
+  9.5% {
+    opacity: 1;
+  }
+  9.6% {
+    opacity: 1;
+  }
+  9.62% {
+    opacity: 1;
+  }
+  14.98% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  15.8% {
+    opacity: 0.5;
+  }
+  15.82% {
+    opacity: 1;
+  }
+  15.18% {
+    opacity: 1;
+  }
+  15.2% {
+    opacity: 0.7;
+  }
+  16% {
+    opacity: 0.7;
+  }
+  16.02% {
+    opacity: 1;
+  }
+  15.48% {
+    opacity: 1;
+  }
+  15.5% {
+    opacity: 0.5;
+  }
+  16.2% {
+    opacity: 0.5;
+  }
+  16.22% {
+    opacity: 1;
+  }
+  16.98% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  17.8% {
+    opacity: 1;
+  }
+  17.82% {
+    opacity: 1;
+  }
+  20.48% {
+    opacity: 1;
+  }
+  20.5% {
+    opacity: 0.9;
+  }
+  21.3% {
+    opacity: 0.9;
+  }
+  21.32% {
+    opacity: 1;
+  }
+  20.98% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  22.02% {
+    opacity: 1;
+  }
+  39.98% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 1;
+  }
+  41.02% {
+    opacity: 1;
+  }
+  40.48% {
+    opacity: 1;
+  }
+  40.5% {
+    opacity: 0.6;
+  }
+  41.4% {
+    opacity: 0.6;
+  }
+  41.42% {
+    opacity: 1;
+  }
+  41.98% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 1;
+  }
+  42.8% {
+    opacity: 1;
+  }
+  42.82% {
+    opacity: 1;
+  }
+  59.98% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 1;
+  }
+  61.02% {
+    opacity: 1;
+  }
+  60.18% {
+    opacity: 1;
+  }
+  60.2% {
+    opacity: 0.2;
+  }
+  61% {
+    opacity: 0.2;
+  }
+  61.02% {
+    opacity: 1;
+  }
+  60.78% {
+    opacity: 1;
+  }
+  60.8% {
+    opacity: 0.4;
+  }
+  61.6% {
+    opacity: 0.4;
+  }
+  61.62% {
+    opacity: 1;
+  }
+  61.38% {
+    opacity: 1;
+  }
+  61.4% {
+    opacity: 0;
+  }
+  62.2% {
+    opacity: 0;
+  }
+  62.22% {
+    opacity: 1;
+  }
+  61.78% {
+    opacity: 1;
+  }
+  61.8% {
+    opacity: 1;
+  }
+  62.8% {
+    opacity: 1;
+  }
+  62.82% {
+    opacity: 1;
+  }
+  75.98% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 1;
+  }
+  77% {
+    opacity: 1;
+  }
+  77.02% {
+    opacity: 1;
+  }
+  77.98% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.7;
+  }
+  78.8% {
+    opacity: 0.7;
+  }
+  78.82% {
+    opacity: 1;
+  }
+  78.98% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  80.02% {
+    opacity: 1;
+  }
+  99.98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  101% {
+    opacity: 1;
+  }
+  101.02% {
+    opacity: 1;
+  }
+}
